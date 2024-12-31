@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
             state: 'pass-through-value'
         };
         const authUrl = `${oauth2Endpoint}?${new URLSearchParams(params).toString()}`;
-        window.open(authUrl, 'popup', 'width=600,height=600');
+        window.location.href = authUrl;
     });
 
     document.getElementById('githubSignInBtn').addEventListener('click', () => {
-        const clientId = 'Iv23liYaE8qNS4fUc2qF';
+        const clientId = 'Ov23liOhly73iLVP8zB1';
         const redirectUri = 'https://elitesun.github.io/Quiz/';
         const authUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=user`;
-        window.open(authUrl, 'popup', 'width=600,height=600');
+        window.location.href = authUrl;
     });
 
     document.getElementById('linkedinSignInBtn').addEventListener('click', () => {
         const clientId = '78c6vz1h9qnde0';
         const redirectUri = 'https://elitesun.github.io/Quiz/';
         const authUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=r_liteprofile`;
-        window.open(authUrl, 'popup', 'width=600,height=600');
+        window.location.href = authUrl;
     });
 });
