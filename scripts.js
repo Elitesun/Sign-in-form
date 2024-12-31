@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('googleSignInBtn').addEventListener('click', () => {
         const oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
         const params = {
-            client_id: '979191689501-bvbu1i0jk40evuiph5rnkhlrck16op5g.apps.googleusercontent.com',
+            client_id: '979191689501-6fl5sggm3i1kuoh0pes9al2ortmvf2ho.apps.googleusercontent.com',
             redirect_uri: 'https://elitesun.github.io/Quiz/',
             response_type: 'token',
             scope: 'https://www.googleapis.com/auth/userinfo.profile',
